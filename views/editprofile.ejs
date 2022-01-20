@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+
+<html lang="pt_br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="../css/style2.css">
+    <link rel="stylesheet" href="../css/formedit.css">
+
+    <title>Editar perfil</title>
+
+</head>
+
+<body>
+
+    <main>
+
+        <h1>Editar Perfil</h1>
+
+        <form action="/formeditar" method="post">
+
+            Nome:<input type="text" name="nome" value="<%= email[0].nome %>" /><br />
+
+            Email:<input type="text" name="email" value="<%= email[0].email %>" /><br />
+
+            Senha:<input type="password" name="senha" value="<%= email[0].senha %>" /><br />
+
+            Profissão:<input type="text" name="prof" value="<%= email[0].prof%>" placeholder="Coloque sua profissão.."> <br />
+
+            Descrição:<input type="" name="descricao" value="<%= email[0].descricao %>" placeholder="Coloque sua descrição.."> <br />
+
+            Telefone:<input type="text" name="tel" value="<%= email[0].tel%>" placeholder="Coloque seu contato.."> <br />
+
+            <input type="hidden" name="id" value="<%= email[0].id %>" /> <br />
+
+            <input type="submit" value="Salvar alterações" />
+
+        </form>
+
+    </main>
+
+</body>
+
+</html>

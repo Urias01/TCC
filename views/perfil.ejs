@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/perfil.css">
+    <link rel="stylesheet" href="css/perfilcard.css">
+
+    <script defer src="index.js"></script>
+
+    <title>Perfil</title>
+
+</head>
+
+<body>
+
+    <header id="header">
+
+        <nav>
+
+            <a class="logo" href="/">The Jobs</a>
+
+            <div class="mobile-menu">
+
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+
+            </div>
+
+            <ul class="nav-list">
+
+                <li><a href="/feed">Feed</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <script src="js/mobile-navbar.js"></script>
+
+    <section id="profile">
+
+        <aside class="card-general">
+
+            <div class="profile-card">
+
+                <div class="card-header">
+
+                    <div class="pic">
+
+                        <img src="images/user.png" alt="">
+
+                    </div>
+
+                    <div class="name"><%= info[0].nome %></div>
+
+                    <div class="desc"><%= info[0].email %></div>
+
+
+                    <a href="https://wa.me/55<%=info[0].tel%>" class="contact-btn">Entrar em contato</a>
+
+                    <br/>
+
+                <a href="/editperf/" class="contact-btn">Editar</a>
+
+
+
+                </div>
+
+                <div class="card-footer">
+
+                    <div class="numbers">
+
+                        <div class="item">
+
+                            <span><%= info[0].descricao%></span>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </aside>
+
+    </section>
+
+</body>
+
+</html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link href="https://fonts.googleapis.com/css2?family=Mohave&family=Poppins:wght@300&family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <script defer src="index.js"></script>
+    <script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+    <title>Pagina Inicial</title>
+
+</head>
+
+<body>
+
+    <header id="header">
+
+        <nav>
+
+            <a class="logo" href="/">The Jobs</a>
+
+            <div class="mobile-menu">
+
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+
+            </div>
+
+            <ul class="nav-list">
+
+                <li><a href="/cad">Cadastre-se</a></li>
+                <li><a href="/login">Login</a></li>
+
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <main class="main-container"></main>
+
+    <script src="js/mobile-navbar.js"></script>
+
+    <div class="wrap">
+      <div class="search">
+        <form action="/buscar" method="POST">
+          <input class='searchTerm' type="text" name="freeBusca" placeholder="Pesquisar freelancer.."/>
+          <button class='searchButton' type="submit">
+            <i class="fa fa-search"></i>
+          </button>
+        </form>
+      </div>
+    </div>
+
+
+
+
+
+    <div id="funciona">
+       <details>
+         <summary>Como Funciona</summary>
+          <div class="content">
+              <b>Para Freelancer</b>
+               <div class="content">
+                 <p>Se você for um freelancer, MEI ou apenas uma pessoa que busca ganhar dinheiro com seu talento, é necessário fazer
+                 o cadastro no topo desta página, e, depois, completar seu perfil com os dados requisitados</p>
+               </div>
+               <b>Para Cliente</b>
+                <div class="content">
+                  <p>Se você for um cliente, é preciso apenas se cadastrar no site para ter contato com os freelancers disponíveis</p>
+                </div>
+          </div>
+        </details>
+        <details id="sobre">
+          <summary>Sobre Nós</summary>
+           <div class="content">
+               <b>Marina Alves Milão</b>
+                <div class="content">
+                  <p>17 anos. 3ºA Informática para a Internet. Turma B.</p>
+                </div>
+                <b>Urias Luis Pereira</b>
+                 <div class="content">
+                   <p>17 anos. 3ºA Informática para a Internet. Turma A.</p>
+                 </div>
+                 <b>Vinícios Cotrim dos Santos</b>
+                 <div class="content">
+                   <p>18 anos. 3ºA Informática para a Internet. Turma B.</p>
+                 </div>
+           </div>
+         </details>
+      </div>
+      <div class="footer-basic">
+          <footer>
+              <ul class="list-inline">
+                  <li class="list-inline-item"><a href="/">Home</a></li>
+                  <li class="list-inline-item"><a href="/feed">Serviços</a></li>
+                  <li class="list-inline-item"><a href="/#sobre">Sobre Nós</a></li>
+                  <li class="list-inline-item"><a href="/#funciona">Como Funciona</a></li>
+              </ul>
+              <p class="copyright">The Jobs © 2021</p>
+          </footer>
+      </div>
+
+</body>
+
+</html>

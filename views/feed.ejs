@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link
+        href="https://fonts.googleapis.com/css2?family=Mohave&family=Poppins:wght@300&family=Roboto+Condensed:wght@700&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/navbar.css">
+    <link rel="stylesheet" href="css/feed.css">
+    <script defer src="index.js"></script>
+
+    <title>Feed</title>
+
+</head>
+
+<body>
+
+    <header id="header">
+
+        <nav>
+
+            <a class="logo" href="/">The Jobs</a>
+
+            <div class="mobile-menu">
+
+                <div class="line1"></div>
+                <div class="line2"></div>
+                <div class="line3"></div>
+
+            </div>
+
+            <ul class="nav-list">
+
+                <li><a href="/cad">Cadastre-se</a></li>
+
+            </ul>
+
+        </nav>
+
+    </header>
+
+    <h1 class="tit"> FEED </h1>
+
+    <h2 class="tit"> Prestadores </h2>
+
+    <div class="row">
+        <% for(var i=0;i<info.length;i++){ %>
+        <div class="card">
+            <img class="image" src="images/user.png">
+            <a href="/perfil"> <%= info[i].nome %> </a> </br>
+            <p> <%= info[i].email %> </p>
+            <p> <%= info[i].prof %> </p>
+            <details>
+              <summary class="desc">Descrição</summary>
+                <p><%= info[i].descricao %></p>
+                <a href="https://wa.me/55<%=info[i].tel%>" class="contact-btn"><b>Clique para entrar em contato</b></a>
+            </details>
+        </div>
+        <%}%>
+        </div>
+
+        <h2 class="tit"> Diarista </h2>
+
+            <div class="row">
+
+              <% for(var i=0;i<info.length;i++){ %>
+
+        <% if(info[i].prof=="Diarista"){ %>
+
+        <div class="card">
+            <img class="image">
+            <a href="/perfil"> <%= info[i].nome %> </a> </br>
+            <p> <%= info[i].email %> </p>
+        </div>
+        <%}}%>
+    </div>
+
+        <h2 class="tit"> Eletricista </h2>
+
+        <div class="row">
+
+          <% for(var i=0;i<info.length;i++){ %>
+
+    <% if(info[i].prof=="Eletricista"){ %>
+
+    <div class="card">
+        <img class="image">
+        <a href="/perfil"> <%= info[i].nome %> </a> </br>
+        <p> <%= info[i].email %> </p>
+        <a href="https://wa.me/55<%=info[i].tel%>" class="contact-btn">Entrar em contato</a>
+    </div>
+    <%}}%>
+    </div>
+
+    <h2 class="tit"> Montador </h2>
+
+    <div class="row">
+
+      <% for(var i=0;i<info.length;i++){ %>
+
+        <% if(info[i].prof=="Montador"){ %>
+
+    <div class="card">
+      <img class="image">
+      <a href="/perfil"> <%= info[i].nome %> </a> </br>
+      <p> <%= info[i].email %> </p>
+      <a href="https://wa.me/55<%=info[i].tel%>" class="contact-btn">Entrar em contato</a>
+    </div>
+      <%}}%>
+    </div>
+
+    <div class="footer-basic">
+        <footer>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="/">Home</a></li>
+                <li class="list-inline-item"><a href="/feed">Serviços</a></li>
+                <li class="list-inline-item"><a href="/#sobre">Sobre Nós</a></li>
+                <li class="list-inline-item"><a href="/#funciona">Como Funciona</a></li>
+            </ul>
+            <p class="copyright">The Jobs © 2021</p>
+        </footer>
+    </div>
+</body>
+
+</html>

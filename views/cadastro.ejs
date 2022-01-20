@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+
+<html lang="pt-br">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="css/form.css">
+    <link rel="stylesheet" href="css/style2.css">
+
+    <title>Cadastro</title>
+
+</head>
+
+<body>
+
+    <main>
+
+        <h1>Criar Conta</h1>
+
+        <form name="formcad" method="post" action="/cadauser" onsubmit="return validateForm()">
+
+            <label for="radio">
+
+                <span>Contratar: </span>
+
+                <input type="radio" id="radio" name="tipoCadastro" value="Cliente" required>
+                <p>Encontre freelancers incríveis</p>
+
+                <span>Trabalhar: </span>
+
+                <input type="radio" id="radio" name="tipoCadastro" value="Freelancer" required>
+                <p>Seja contratado e ganhe dinheiro.</p>
+
+            </label>
+
+            <label for="name">
+
+                <span>Nome:</span>
+
+                <input type="text" id="nome" name="nome" placeholder="Nome" required>
+
+            </label>
+
+            <label for="email">
+
+                <span>E-mail:</span>
+
+                <input type="email" id="email" name="email" placeholder="Email" required>
+
+            </label>
+
+            <label for="password">
+
+                <span>Senha:</span>
+
+                <input type="password" id="password" name="senha" placeholder="Senha" required>
+
+            </label>
+
+            <input type="submit" value="Cadastrar" id="button">
+
+        </form>
+
+        <a href='/'>Voltar</a>
+
+    </main>
+
+</body>
+
+</html>
